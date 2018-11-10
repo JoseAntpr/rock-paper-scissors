@@ -13,11 +13,11 @@ let valid_player = {
 }
 
 let moveSchema = new Schema({
-    text: { String, required: true },
-    result: { String, enum: valid_results, required: true}, 
-    date: { type: Date, default: Date.now},
-    player1: { String, enum: valid_player, required: true },
-    player2: { String, enum: valid_player, required: true }
+    text: String,
+    result: { type: String, enum: valid_results, required: [true, 'result is required']}, 
+    date: { type: Date, default: Date.now },
+    player1: { type: String, enum: valid_player, required: [true, 'player1 is required']},
+    player2: { type: String, enum: valid_player, required: [true, 'player2 is required']}
 });
 
 module.exports = mongoose.model('Move', moveSchema);
