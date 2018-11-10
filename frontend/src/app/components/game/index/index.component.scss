@@ -1,0 +1,24 @@
+.container-background{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 66px);
+    background-image: url("/assets/img/background_280.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+@media(min-width:576px){
+    .container-background{
+        background-image: url("/assets/img/background_620.jpg");
+    }
+
+}
+@media(min-width: 768px){
+    .container-background{
+        background-image: url("/assets/img/background_884.jpg");
+    }
+}
+@media(min-width: 1200px){
+    .container-background{
+        background-image: url("/assets/img/background_1200.jpg");
+    }
+}
