@@ -1,0 +1,14 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "Rock-paper-scicssors JS game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JoseAntpr",
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
+  }
+}
