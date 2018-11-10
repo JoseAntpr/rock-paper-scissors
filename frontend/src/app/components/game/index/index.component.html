@@ -2,10 +2,10 @@
 <div class="container mt-4">
   <div class="row justify-content-center">
     <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-      <button class="btn btn-primary local-button-position float-right">Local Game</button>
+      <button [routerLink]="['/local']" class="btn btn-primary float-right">Local Game</button>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-      <button class="btn btn-primary remote-button-position float-left">Remote Game</button>
+      <button [routerLink]="['/remote']" class="btn btn-primary float-left">Remote Game</button>
     </div>
   </div>
 </div>

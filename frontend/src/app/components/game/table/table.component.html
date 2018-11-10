@@ -1,0 +1,70 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12">
+      <button [routerLink]="['']" class="btn btn-danger">Back</button>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-lg-2 col-md-2 col-sm-12 mt-3 float-right">
+      <h2>You</h2>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-4 mt-4">
+          <button class="btn btn-link">
+            <fa name="hand-paper-o" size="5x"></fa>
+          </button>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-4 mt-4">
+          <button class="btn btn-link">
+            <fa name="hand-scissors-o" size="5x"></fa>
+          </button>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-4 mt-4">
+          <button class="btn btn-link">
+            <fa name="hand-rock-o" size="5x"></fa>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5 col-md-8 col-sm-12 mt-3">
+      <h2>Ring</h2>
+      <div class="jumbotron mt-4 ring">
+        <div class="float-right play-hand">
+          <fa  name="hand-rock-o" size="5x"></fa>
+        </div>
+        <div class="float-left play-hand">
+          <fa name="hand-rock-o" size="5x"></fa>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 mt-3">
+      <h2>Machine</h2>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-4 mt-4">
+          <button class="btn btn-link" disabled>
+            <fa name="hand-paper-o" size="5x"></fa>
+          </button>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-4 mt-4">
+          <button class="btn btn-link" disabled>
+            <fa name="hand-scissors-o" size="5x"></fa>
+          </button>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-4 mt-4">
+          <button class="btn btn-link" disabled>
+            <fa name="hand-rock-o" size="5x"></fa>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-12 col-sm-12 mt-3">
+      <h2>Historial</h2>
+      <div class="mt-5">
+        <div class="alert alert-warning">
+          <p>It's a tie - 10/11/18 18:15</p>
+          <p>You: <fa name="hand-rock-o" size="2x"> </fa>, Machine: <fa name="hand-rock-o" size="2x"></fa>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

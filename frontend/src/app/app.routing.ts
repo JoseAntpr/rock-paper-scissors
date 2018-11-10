@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { IndexComponent } from './components/game/index/index.component';
 
 // Components
+import { IndexComponent } from './components/game/index/index.component';
+import { TableComponent } from './components/game/table/table.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
-  // { path: 'add', component: NewUserComponent },
+  { path: 'remote', component: TableComponent },
+  { path: 'local', component: TableComponent },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
