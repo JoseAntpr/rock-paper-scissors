@@ -2,11 +2,15 @@ require('./config/config');
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 
 // Connect with MongoDB
 require('./lib/mongooseConnect');
+
+// Cors
+app.use(cors());
 
 // parse applicartion/json
 app.use(bodyParser.json());
@@ -17,6 +21,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 // Routes
 app.use(require('./routes/index'));
 
+// Error handler
 app.use( (err, req, res, next) => {
     res.status(err.status || 500);
 

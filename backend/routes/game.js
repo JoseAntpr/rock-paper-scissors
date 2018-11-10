@@ -7,10 +7,15 @@ const app = express();
 Get random hand to machine user
 ===============================
 */
-router.get('/hand', ( req, res, next ) => {
+app.get('/hand', ( req, res, next ) => {
+    try {
+        const hand = Math.floor(Math.random() * 3);
 
-    const number = Math.floor(Math.random * 2);
-
-    res.json({ ok: true, hand: number });
+        return res.json({ ok: true, hand: hand });
+    }catch (e) {
+        next(e)
+    }
 
 });
+
+module.exports = app;
