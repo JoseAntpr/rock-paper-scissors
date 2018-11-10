@@ -16,7 +16,7 @@ export class Message {
     getMessage(): string {
         let text = '';
 
-        if ( this.result === 'winner') {
+        if ( this.result === 'win') {
             text = 'You win';
         } else if (this.result === 'tie') {
             text = 'It´s tie';
