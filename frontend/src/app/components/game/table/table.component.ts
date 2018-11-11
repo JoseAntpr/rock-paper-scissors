@@ -72,7 +72,7 @@ export class TableComponent implements OnInit, OnDestroy {
 
     if ( this.isRemote ) {
       this._movesService.createMove(message)
-        .subscribe(() => console.log('Jugada creada'));
+        .subscribe();
     }
 
     this.history.unshift(message);
