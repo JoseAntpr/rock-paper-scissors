@@ -7,7 +7,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { GameService } from 'src/app/services/game.service';
 import { MovesService } from 'src/app/services/moves.service';
 import { HttpClientModule } from '@angular/common/http';
-import { from } from 'rxjs';
+
 
 
 describe('TableComponent', () => {

@@ -6,7 +6,7 @@ export class Message {
     player1: string;
     player2: string;
 
-    constructor(result: string, player1: string, player2: string, date?: Date, _id?: string, text?: string ) {
+    constructor(result: string, player1: string, player2: string, text?: string, date?: Date, _id?: string ) {
         this._id = _id;
         this.result = result;
         this.text = text || this.getMessage();
