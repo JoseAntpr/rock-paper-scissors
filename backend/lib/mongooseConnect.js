@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const localConfig = require('../config/environment');
+const localConfig = require('../config/config');
 const conn = mongoose.connection;
 
 conn.on('error', ( err ) => {
@@ -11,4 +11,4 @@ conn.once('open', () => {
     console.log('Mongodb is connected and waiting for your requests');
 });
 
-mongoose.connect(localConfig.bd.database);
+mongoose.connect(process.env.URLDB);
