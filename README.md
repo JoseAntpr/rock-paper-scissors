@@ -20,3 +20,11 @@ Run Tests
 
 - Open your browser in http://localhost:4200 for see your app
 - Open your browser in http://localhost:3100 for see API documentation
+
+## Improvements
+* Modularized app in different parts, it's good practice when you can add new parts to the core app.
+* Lazy loading to improve UX and first loading in browser.
+* Extends server to get Winner in backend... this functionality is similar to Frontend.
+* Add token to server and save historial by user.
+* Possibily to play in remote with other players.
+* Add custom error manage in backend and frontend.  
