@@ -10,7 +10,9 @@
     "start:backend": "cd backend && npm start",
     "install:front": "cd frontend && npm install",
     "install:backend": "cd backend && npm install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm-run-all -p test:*",
+    "test:front": "cd frontend && npm test",
+    "test:backend": "cd backend && npm test"
   },
   "author": "JoseAntpr",
   "license": "MIT",

@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IndexComponent } from './index.component';
+import { RouterTestingModule } from '@angular/router/testing';
+import { By } from '@angular/platform-browser';
+import { RouterLink } from '@angular/router';
 
 describe('IndexComponent', () => {
   let component: IndexComponent;
@@ -8,7 +11,8 @@ describe('IndexComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IndexComponent ]
+      declarations: [ IndexComponent ],
+      imports: [ RouterTestingModule ]
     })
     .compileComponents();
   }));
@@ -22,4 +26,5 @@ describe('IndexComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });
