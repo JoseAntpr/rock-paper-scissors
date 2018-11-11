@@ -1,16 +1,18 @@
 export class Message {
+    _id: string;
     text: string;
     result: string;
     date: Date;
-    player: string;
-    machine: string;
+    player1: string;
+    player2: string;
 
-    constructor(result: string, player: string, machine: string) {
+    constructor(result: string, player1: string, player2: string, date?: Date, _id?: string, text?: string ) {
+        this._id = _id;
         this.result = result;
-        this.text = this.getMessage();
-        this.date = new Date();
-        this.player = player;
-        this.machine = machine;
+        this.text = text || this.getMessage();
+        this.date = date || new Date();
+        this.player1 = player1;
+        this.player2 = player2;
     }
 
     getMessage(): string {

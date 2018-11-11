@@ -1,4 +1,4 @@
-enum Type {
+export enum Type {
     paper = 0,
     scissors = 1,
     rock= 2

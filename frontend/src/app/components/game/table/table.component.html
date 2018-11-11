@@ -29,10 +29,10 @@
       <h2>Ring</h2>
       <div class="jumbotron mt-4 ring">
         <div class="float-right play-hand">
-          <fa  *ngIf="playerHand" name="hand-{{playerHand}}-o" size="5x"></fa>
+          <fa  *ngIf="player1Hand" name="hand-{{player1Hand}}-o" size="5x"></fa>
         </div>
         <div class="float-left play-hand">
-          <fa *ngIf="machineHand" name="hand-{{machineHand}}-o" size="5x"></fa>
+          <fa *ngIf="player2Hand" name="hand-{{player2Hand}}-o" size="5x"></fa>
         </div>
       </div>
     </div>
@@ -66,7 +66,7 @@
                 'alert-danger': msg.result==='lose',
                 'alert-warning': msg.result=='tie'}">
           <p>{{msg.text}} - {{msg.date | date: 'dd/MM/yy HH:mm'}}</p>
-          <p>You: <fa name="hand-{{msg.player}}-o" size="2x"> </fa>, Machine: <fa name="hand-{{msg.machine}}-o" size="2x"></fa>
+          <p>You: {{msg.player1}} <fa name="hand-{{msg.player1}}-o" size="2x"> </fa>, Machine: <fa name="hand-{{msg.player2}}-o" size="2x"></fa>
           </p>
         </div>
       </div>
