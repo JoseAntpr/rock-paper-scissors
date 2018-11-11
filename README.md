@@ -28,4 +28,4 @@ Run Tests
 * Add token to server and save historial by user.
 * Possibily to play in remote with other players.
 * Add custom error manage in backend and frontend.  
-* Create a component for Rock, Paper and Scissors column. This component should have inputs and output to events like play ...
+* Create a component for Rock, Paper and Scissors column. This component should have inputs and output to events like play.
